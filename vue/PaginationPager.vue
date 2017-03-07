@@ -9,7 +9,7 @@
     <a @click="select(p)" v-text="p"></a>
   </li>
   <li v-show="pagination.hasRightEdge"><a @click="selectRight">…</a></li>
-  <li :class="{'Current': current==totalPages}"><a @click="select(totalPages)" v-text="totalPages"></a></li>
+  <li v-if="totalPages > 1" :class="{'Current': current==totalPages}"><a @click="select(totalPages)" v-text="totalPages"></a></li>
   <li v-if="next" :class="{'Disabled': !pagination.next}">
     <a @click="select(pagination.next)" v-text="next"></a>
   </li>

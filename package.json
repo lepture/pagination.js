@@ -1,6 +1,6 @@
 {
   "name": "pagination.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A sane pagination with UI components.",
   "author": "Hsiaoming Yang <me@lepture.com>",
   "main": "./lib/pagination.js",
